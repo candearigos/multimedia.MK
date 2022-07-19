@@ -1,0 +1,312 @@
+:root {
+    --main-color:  #4089AD;
+    --text-color:#9C80E1;
+    --bg-color: #394855;
+    --secondary-color:rgb(173, 130, 73);
+    --black-color: rgb(255, 255, 255);
+}
+html{
+    overflow-x: hidden;
+}
+.body{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    color: --text-color;
+    background-color: var(--black-color);
+
+}
+.animado{
+    opacity: 0;
+    transition: all 1s;
+}
+/* VIDEO PRINCIPAL HEADER */
+.multimedia{
+    color: #4089AD;
+    font-size: 50px;
+}
+.titulo {
+    position: relative;
+}
+.tituloppal {
+    height: 490px;
+}
+.tituloppaldos{
+    width: 30%;
+    margin-top: 30%;
+}
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    object-fit: cover;
+    opacity: 100%;
+    height: 490px;
+}
+.videodos{
+    position: absolute;
+    top: 0;
+    left: 45%;
+    width: 5%;
+    bottom: 0;
+    width: 100%;
+    object-fit:scale-down;
+    opacity: 100%;
+    height: 80px;
+}
+.header{
+    background-color: black;
+    height: 80px;
+}
+.titulo{
+position:sticky
+}
+.titulo h1{
+    font-size: 2.5rem;
+    color: var(--main-color);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    animation-name: tituloppal;
+    animation-duration: 5s;
+    position: relative;
+    z-index: 2;
+    margin-top: 15%;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+@keyframes tituloppal{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.titulo p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    display: inline-block;
+    z-index: 2;
+    width: auto;
+}
+.tarifario{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: 2em 1em 1em 1em ;
+
+}
+.botontarifario{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    margin-right: 5%;
+    border-radius: 2%;
+    border: solid 2px var(--bg-color);
+    color: white;
+    background-color: black;
+    padding: 0.5em 1em;
+}
+.botontarifario:hover{
+    background-color: rgb(253, 253, 253);
+    color: black;
+}
+.notas{
+    padding-top: 10%;
+}
+.botonnotas{
+    display: block;
+    width: 80%;
+    height: 100%;
+    text-decoration: none;
+    padding-right: 15%;
+    margin-top: -60%;
+    margin-bottom: -20%;
+    border-radius: 2%;
+    border: solid 2px var(--bg-color);
+    background-color: var(--text-color);
+    color: white;
+    padding: 0.5em 1em; 
+}
+.botonnotas a{
+    background-color: var(--text-color);
+    text-align: center;
+}
+.botonnotas:hover{
+    color: white;
+    background-color: var(--main-color);
+}
+.titulo p a.botoncontacto {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    border-radius: 2%;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: 0.5em 1em;
+}
+.titulo p a.botoncontacto:hover{
+    background-color: white;
+    
+}
+/* audiencia */
+.audiencia{
+    background-color: rgb(185, 185, 185);
+    padding: 0% 0% 0% 0%;
+}
+.audiencia img{
+    width: 130%;
+}
+.redes{
+    margin-top: 5%;
+    margin-left: 10%;
+    font-family: 'Open Sans', sans-serif;
+}
+.redes h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+}
+.medio{
+    color:var(--main-color);
+}
+/* iconos */
+.iconos h3{
+    font-size: 20px;
+    font-family: 'Ramabhadra', sans-serif;
+}
+.iconos h5{
+    font-family:  'Open Sans', sans-serif;
+}
+.iconos a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Ramabhadra', sans-serif;
+    background-color: #4089AD;
+    border-radius: 15px;
+    padding: 5%;
+   padding-top: 5%;
+   color: white;
+   transition: 0.5s;
+}
+.iconos a:hover{
+    background-color:#9C80E1 ;
+    color: white;
+}
+.iconos i{
+    font-size: 40px;
+    color: #9C80E1
+    ;
+}
+.likes{
+    margin-top: 5%;
+}
+.likesdos{
+    margin-top: 20%;
+}
+.corazon{
+    color: rgb(238, 58, 58);
+    font-size: 50px;
+    animation-name: corazon;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.ojo{
+    font-size: 60px;
+    color: #394855;
+    margin-top: 55%;
+}
+@keyframes corazon{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+.notasleidas img{
+    width: 110%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    transition: 0.5s;
+}
+.notasleidas img:hover{
+    width: 120%;
+}
+.notasleidas h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    color:#9C80E1
+}
+.screen{
+    margin-bottom: 15%;
+}
+.screen img{
+    position: relative;
+    width: 80%;
+    z-index: 1;
+}
+.screen h2, .notasleidas h2{
+    font-size: 40px;
+    color:  #4089AD;
+    font-family:  'Open Sans', sans-serif;
+    margin-top: 5%;
+}
+.flecha i{
+    color:#4089AD;
+}
+.flecha{
+    position: relative;
+    z-index: 2;
+    font-size: 150px;
+    margin-top:-23%;
+    margin-left: -40%;
+    animation-name: flecha;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes flecha{
+    0%{
+       opacity: 0%;
+       transform: translateX(0%);
+    }
+    100%{
+      opacity: 100%;
+      transform: translateX(10%);
+    }
+}
+.quienessomos h1{
+    font-size: 50px;
+    color:  #4089AD;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -5%;
+}
+.quienessomos{
+    margin-top: 10%;
+}
+.quienessomos img{
+    width: 70%;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    border: solid 3px  #4089AD;
+    transition: 0.5s;
+}
+.quienessomos img:hover{
+    width: 72%;
+    opacity: 80%;
+    filter: grayscale(0%);
+}
+.puesto{
+    margin-top: -5%;
+}
+.quienessomos i{
+    font-size: 30px;
+}
